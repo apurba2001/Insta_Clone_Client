@@ -45,6 +45,12 @@ const Form = () => {
             })
     }
 
+    const [dropStyle, setDropStyle] = useState({
+        backgroundImage: '',
+        backgroundSize: 'cover',
+        border: '2px dotted rgb(178, 177, 177) '
+    });
+
     useEffect(() => {
         if (prevSelectedFileRef.current !== selectedFile) {
             const dropStyle = {
@@ -58,13 +64,9 @@ const Form = () => {
         return () => {
             URL.revokeObjectURL(dropStyle.backgroundImage)
         }
-    }, [selectedFile])
+    }, [selectedFile, dropStyle.backgroundImage])
 
-    const [dropStyle, setDropStyle] = useState({
-        backgroundImage: '',
-        backgroundSize: 'cover',
-        border: '2px dotted rgb(178, 177, 177) '
-    });
+    
 
     if (load) return (
         <div className="animation">
