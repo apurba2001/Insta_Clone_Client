@@ -1,0 +1,76 @@
+.team-image{
+    width: 200px;
+}
+.loding-parent{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loding-page{
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:20px;
+}
+.team-image{
+    height: 350px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+.enter-section{
+    width: 300px;
+    text-align: center;
+    height: 350px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    animation-name: team-box;
+    animation-duration:0.5s;
+}
+.x-heading{
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.enter-button{
+    padding: 5px 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 5px;
+    border: none;
+    background-image: linear-gradient( 135deg, #F761A1 10%, #8C1BAB 100%);
+    color: white;
+    position:absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    cursor: pointer;
+    transition:0.2s;
+}
+.enter-button:hover{
+    background-image: linear-gradient( 135deg, #ca3b79 10%, #791a93 100%);
+}
+.enter-button:active{
+   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+p{
+    color: rgb(116, 116, 116);
+}
+
+@keyframes team-box{
+    from{
+        top:-700px;
+        opacity:0;
+    }to{
+        top:0;
+        opacity:1;
+    }
+}
