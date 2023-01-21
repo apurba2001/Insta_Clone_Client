@@ -5,7 +5,6 @@ import heart from './icons/heart.png'
 const Post = (props) => {
 
   const { data } = props
-  console.log(data)
   return (
     <div className='post-container'>
       <div className="header">

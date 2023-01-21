@@ -5,12 +5,14 @@ import Header from './Header'
 import "./form.css"
 import { useEffect, useRef } from 'react'
 import Animation from "./Animation"
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
     const initialData = { author: '', description: '', location: '' }
     const [formData, setFormData] = useState(initialData)
     const [selectedFile, setSelectedFile] = useState(null)
     const prevSelectedFileRef = useRef(null);
+    const navigate = useNavigate()
 
     const handleForm = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -41,7 +43,7 @@ const Form = () => {
             }
         })
             .then(() => {
-                window.location.href = '/posts'
+                navigate('/posts');
             })
     }
 
