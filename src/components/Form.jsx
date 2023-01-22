@@ -77,15 +77,16 @@ const Form = () => {
         </div>)
 
     return (
-        <>
+        <div className='main-form-container'>
             <Header />
+            <div className='form-main'>
             <div className="form-container">
                 <form className="form" onSubmit={submitForm} autoComplete="off" >
                     <div {...getRootProps()} className="drop-section" style={dropStyle}>
                         <input {...getInputProps()} />
                         {!selectedFile &&
                             <>
-                                <span class="material-symbols-outlined md-48">
+                                <span className="material-symbols-outlined md-48">
                                     add_circle
                                 </span>
                                 <div>Drag image here or click here to select</div>
@@ -134,7 +135,8 @@ const Form = () => {
                     </button>
                 </form>
             </div>
-        </>
+            </div>
+        </div>
     )
 }
 

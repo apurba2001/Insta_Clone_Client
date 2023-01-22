@@ -106,7 +106,7 @@
 .insta-text{
   padding: 0 10px;
   font-size:30px;
-  color: #ab3dd7;
+  color: rgb(65, 64, 64);
 }
 .heart-icon{
   width: 20px;
@@ -140,4 +140,11 @@
     opacity: 1;
   }
 
+}
+@media only screen and (max-width: 420px) {
+  .doc-head{
+    height: 60px;
+    padding: 15px 16px;
+  }
+  
 }
