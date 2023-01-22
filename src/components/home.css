@@ -74,17 +74,15 @@ p{
     }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 500px) {
   .loding-page{
     flex-direction: column;
     height: auto;
   }
   .image-section{
-    margin-top: 80px;
     margin-bottom: 10px;
   }
   .team-image{
-    margin-top: 20px;
     width: 390px;
     height: auto;
   }

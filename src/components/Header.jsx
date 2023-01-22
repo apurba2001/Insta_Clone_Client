@@ -10,7 +10,7 @@ const Header = () => {
                     <img className='insta-pic' alt='icon' src={insta} />
                 </span>
                 <span>
-                    <h2 className='insta-text'>Insta Clone</h2>
+                    <h2 className='insta-text'>Instaclone</h2>
                 </span>
             </div>
             <div>
